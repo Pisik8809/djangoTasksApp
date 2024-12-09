@@ -1,0 +1,6 @@
+{% if not task.completed %}
+<form method="post" action="{% url 'tasks:task_complete' task.id %}">
+    {% csrf_token %}
+    <button type="submit">Mark as Complete</button>
+</form>
+{% endif %}

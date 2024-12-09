@@ -1,0 +1,28 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1>Diploma project by Maksym Shpilka</h1>
+    <p class="lead">"Research on the impact of OWASP recommendations on secure software development"</p>
+    <p><a href="{{ admin_url }}" class="btn btn-primary btn-large">task manager &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Adding user groups</h2>
+        <p>
+            Ability to create user groups with defined and limited rights to work with content
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Adding user roles</h2>
+        <p>Ability to add Employee and Manager user roles that can work with the task app.</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Adding Tasks</h2>
+        <p>Ability to add tasks from the boss to the manager and from the manager to the Employee, marking who is responsible for the execution, adding a mark on the completion of the task.</p>
+    </div>
+</div>
+
+{% endblock %}
